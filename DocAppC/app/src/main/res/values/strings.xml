@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">DocAppN</string>
+
+    <!-- Tittle -->
+    <string name="title_home">Home</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_history">History</string>
+    <string name="title_account">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Text -->
+    <string name="text_signUp">
+        <![CDATA["Don't have an account? <b>Sign Up Now</b>"]]>
+    </string>
+    <string name="text_forgot">
+        <![CDATA["Forgot your <b>Password ?</b>"]]>
+    </string>
+    <string name="text_FPass">Enter your Email to make a password change</string>
+    <string name="text_login">Logn in</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_RePassword">Re-Password</string>
+    <string name="text_submit">SUBMIT</string>
+    <string name="text_name">Name</string>
+    <string name="text_date">Date</string>
+    <string name="text_address">Address</string>
+    <string name="text_create_account">CREATE ACCOUNT</string>
+    <string name="text_accept">ACCEPT</string>
+    <string name="text_decline">DECLINE</string>
+    <string name="text_gender">Gender</string>
+    <string name="text_search">Search...</string>
+
+    <!-- Toast Text -->
+    <string name="toast_confirm">Check your Email to Confirm</string>
+
+    <!-- Dialog Text -->
+    <string name="dialog_privacy">Privacy Policy</string>
+    <string name="dialog_coPrivacy">Click Accept button to continue</string>
+
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="kota_list">
+        <item>Jakarta</item>
+        <item>Bandung</item>
+        <item>Malang</item>
+        <item>Surabaya</item>
+        <item>Solo</item>
+    </string-array>
+
+    <string-array name="settings_list">
+        <item>Edit Profile</item>
+        <item>Edit Account</item>
+        <item>Privacy</item>
+        <item>Help</item>
+        <item>About</item>
+    </string-array>
+</resources>

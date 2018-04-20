@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app_project.healthapp.EditaccountActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar_Editaccount"
+        android:background="@color/pureWhite">
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_Editaccount">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_Verified1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VERIFIED"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5dp"
+                            android:textStyle="bold"
+                            android:layout_above="@+id/iv_Edit1"
+                            android:layout_alignStart="@+id/tv_Number" />
+
+                        <TextView
+                            android:id="@+id/tv_Notverified1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tv_Verified1"
+                            android:layout_alignBottom="@+id/tv_Verified1"
+                            android:layout_marginStart="17dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toEndOf="@+id/tv_Verified1"
+                            android:text="NOT VERIFIED"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_Number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/iv_Edit1"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Number"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_Edit1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:src="@drawable/ic_edit" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_Verified2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VERIFIED"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:layout_above="@+id/iv_Edit2"
+                            android:layout_alignStart="@+id/tv_Email" />
+
+                        <TextView
+                            android:id="@+id/tv_Notverified2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tv_Verified2"
+                            android:layout_alignBottom="@+id/tv_Verified2"
+                            android:layout_marginStart="17dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toEndOf="@+id/tv_Verified2"
+                            android:text="NOT VERIFIED"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_Email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/iv_Edit2"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Email"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_Edit2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:src="@drawable/ic_edit" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/strangeGrey"
+    tools:context="app_project.healthapp.HelpActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/help_AppBar"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignEnd="@+id/relativeLayout3">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolBarHelp"
+            android:layout_width="387dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/pureWhite">
+
+            <ImageButton
+                android:id="@+id/ic_back_help"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="?attr/actionBarItemBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_navigation_arrow_back" />
+
+            <TextView
+                android:id="@+id/title_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="Help"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/help_AppBar">
+
+        <View
+            android:id="@+id/shadow_view"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/dropshadow"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginStart="1dp"
+        android:background="@color/pureWhite"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/help_AppBar">
+
+        <ImageView
+            android:id="@+id/iv_Customer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_profile" />
+
+        <TextView
+            android:id="@+id/tv_Customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_Customer"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/iv_Customer"
+            android:text="Customer Care"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_Customer"
+            android:layout_below="@+id/tv_Customer"
+            android:text="021-1234-5678"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/pureWhite"
+        android:layout_below="@id/relativeLayout3">
+
+        <ImageView
+            android:id="@+id/iv_Email"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_email" />
+
+        <TextView
+            android:id="@+id/tv_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_Email"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/iv_Email"
+            android:text="Email Us!"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_Email"
+            android:layout_below="@+id/tv_Email"
+            android:text="loremipsum@mail.com"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

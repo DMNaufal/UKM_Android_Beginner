@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="app_project.healthapp.LoginActivity"
+    android:background="@color/pureWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_above="@+id/linAbo">
+        <LinearLayout
+            android:id="@+id/LogLin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <ImageView android:src="@drawable/heart"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal" />
+
+            <!-- Email -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/MyHintText"
+                android:layout_marginBottom="10dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/iEmail"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:hint="Email"
+                    android:layout_height="50dp"
+                    android:theme="@style/MyEditText" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Password -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/MyHintText"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/iPassword"
+                    android:layout_width="match_parent"
+                    android:hint="Password"
+                    android:layout_height="50dp"
+                    android:inputType="textPassword"
+                    android:theme="@style/MyEditText"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="25dp"
+                android:padding="12dp"
+                android:text="Log in"
+                android:textAllCaps="false"
+                android:radius="50dp"
+                android:textColor="@color/pureWhite"
+                android:textSize="16dp"
+                android:background="@drawable/rounded"/>
+
+            <TextView
+                android:id="@+id/txtForgotP"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:text="@string/txtForgot"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/linAbo"
+        android:background="#fff6f7"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtSignup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:text="@string/signUp"/>
+    </LinearLayout>
+
+</RelativeLayout>

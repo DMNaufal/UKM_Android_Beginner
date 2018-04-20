@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.bdrx.docappc.LoginActivity"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_above="@+id/LinearLayout_bottom_signup">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <ImageView android:src="@drawable/heart"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal" />
+
+            <!-- Email -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/MyHintText"
+                android:layout_marginBottom="10dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/in_email_login"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:hint="@string/text_email"
+                    android:layout_height="50dp"
+                    android:theme="@style/MyEditText" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Password -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/MyHintText"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/in_password_login"
+                    android:layout_width="match_parent"
+                    android:hint="@string/text_password"
+                    android:layout_height="50dp"
+                    android:inputType="textPassword"
+                    android:theme="@style/MyEditText"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="25dp"
+                android:padding="12dp"
+                android:text="@string/text_login"
+                android:textAllCaps="false"
+                android:radius="50dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:background="@drawable/rounded"
+                android:onClick="btn_login_mtd"/>
+
+            <TextView
+                android:id="@+id/text_fpass_login"
+                android:onClick="text_fpass_login_mtd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:text="@string/text_forgot"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/LinearLayout_bottom_signup"
+        android:background="@color/whitePink"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_signup_login"
+            android:onClick="text_signup_login_mtd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="@string/text_signUp"/>
+    </LinearLayout>
+
+</RelativeLayout>

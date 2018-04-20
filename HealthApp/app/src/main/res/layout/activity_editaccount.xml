@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app_project.healthapp.EditaccountActivity">
+
+    <android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/account_AppBar"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="8dp"
+    android:layout_marginEnd="10dp">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBarAccount"
+        android:background="@color/pureWhite">
+
+        <ImageButton
+            android:id="@+id/ic_close_edit_account"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/actionBarItemBackground"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_close_black" />
+
+        <TextView
+            android:id="@+id/title_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="Edit Account"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:background="?attr/actionBarItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:id="@+id/update_profile"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="UPDATE"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/account_AppBar">
+
+        <View
+            android:id="@+id/shadow_view"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/dropshadow"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/account_AppBar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_Verified1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VERIFIED"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5dp"
+                            android:textStyle="bold"
+                            android:layout_above="@+id/iv_Edit1"
+                            android:layout_alignStart="@+id/tv_Number" />
+
+                        <TextView
+                            android:id="@+id/tv_Notverified1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tv_Verified1"
+                            android:layout_alignBottom="@+id/tv_Verified1"
+                            android:layout_marginStart="17dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toEndOf="@+id/tv_Verified1"
+                            android:text="NOT VERIFIED"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_Number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/iv_Edit1"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Number"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_Edit1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:src="@drawable/ic_edit" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_Verified2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VERIFIED"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:layout_above="@+id/iv_Edit2"
+                            android:layout_alignStart="@+id/tv_Email" />
+
+                        <TextView
+                            android:id="@+id/tv_Notverified2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tv_Verified2"
+                            android:layout_alignBottom="@+id/tv_Verified2"
+                            android:layout_marginStart="17dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toEndOf="@+id/tv_Verified2"
+                            android:text="NOT VERIFIED"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_Email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/iv_Edit2"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Email"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_Edit2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:src="@drawable/ic_edit" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

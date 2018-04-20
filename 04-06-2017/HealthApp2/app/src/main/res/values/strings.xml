@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HealthApp</string>
+
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">DocAppN</string>
+
+    <!-- Tittle -->
+    <string name="title_home">Beranda</string>
+    <string name="title_favorite">Favorit</string>
+    <string name="title_history">Riwayat</string>
+    <string name="title_account">Pengaturan</string>
+    <string name="title_activity_maps">Peta</string>
+    <string name="title_notification">Pemberitahuan</string>
+    <string name="title_activity_login">Masuk</string>
+
+    <!-- Login, Signup, Forgetpass Page Text -->
+    <string name="text_signUp">
+        <![CDATA["Tidak Punya Akun? <b>Buat Sekarang</b>"]]>
+    </string>
+    <string name="text_forgot">
+        <![CDATA["Lupa <b>Kata Sandi </b> Anda ?"]]>
+    </string>
+    <string name="text_FPass">Masukan Email anda untuk melakukan perubahan password</string>
+    <string name="text_login">Masuk</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Kata Sandi</string>
+    <string name="text_RePassword">Ulang Kata Sandi</string>
+    <string name="text_submit">SUBMIT</string>
+    <string name="text_name">Nama</string>
+    <string name="text_date">Tanggal Lahir</string>
+    <string name="text_address">Alamat</string>
+    <string name="text_create_account">BUAT AKUN</string>
+    <string name="text_accept">SETUJU</string>
+    <string name="text_decline">MENOLAK</string>
+    <string name="text_gender">Kelamin</string>
+    <string name="text_search">Mencari...</string>
+
+    <!-- Toast Text -->
+    <string name="toast_confirm">Cek Email anda untuk Melakukan Konfirmasi</string>
+
+    <!-- Dialog Text -->
+    <string name="dialog_privacy">Kebijakan Privasi</string>
+    <string name="dialog_coPrivacy">Klik tombol Accept untuk melanjutkan</string>
+
+    <string-array name="gender">
+        <item>Jenis Kelamin</item>
+        <item>Laki - Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="kota_list">
+        <item>Jakarta</item>
+        <item>Bandung</item>
+        <item>Malang</item>
+        <item>Surabaya</item>
+        <item>Solo</item>
+    </string-array>
+
+    <string-array name="settings_list">
+        <item>Edit Profile</item>
+        <item>Edit Account</item>
+        <item>Privacy</item>
+        <item>Help</item>
+        <item>About</item>
+    </string-array>
+</resources>

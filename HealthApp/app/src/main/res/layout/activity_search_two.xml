@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app_project.healthapp.SearchTwoActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_AppBar">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolBarSearch"
+            android:background="@color/pureWhite">
+
+            <ImageButton
+                android:src="@drawable/ic_arrow_back"
+                android:background="?attr/actionBarItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:id="@+id/ic_back1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"/>
+
+            <EditText
+                android:id="@+id/text_search"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginRight="57dp"
+                android:layout_marginLeft="34dp"
+                android:hint="Search Here..."
+                android:textColorHint="@color/strangeGrey"/>
+
+            <ImageButton
+                android:src="@drawable/ic_search"
+                android:background="?attr/actionBarItemBackground"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:scaleType="centerInside"
+                android:id="@+id/ic_search1"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/shadow_home1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_below="@+id/search_AppBar">
+
+        <View
+            android:id="@+id/shadow_view1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/dropshadow"/>
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/list_view_search"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_AppBar"
+        android:divider="#806326"
+        android:dividerHeight="1dp">
+
+    </ListView>
+
+</RelativeLayout>

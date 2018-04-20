@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/pureWhite"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/layout_address">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_hospital" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:text="Jl. Metro Duta Kav.UE, Kebayoran Lama, Jakarta Selatan."
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/layout_address"
+        android:background="@color/pureWhite">
+
+        <ImageView
+            android:id="@+id/ic_time"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_time" />
+
+        <TextView
+            android:id="@+id/time_monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/ic_time"
+            android:text="Monday"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08.00-22.00"
+            android:textSize="15sp"
+            android:layout_alignBaseline="@+id/time_monday"
+            android:layout_alignBottom="@+id/time_monday"
+            android:layout_alignStart="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/time_tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/time_monday"
+            android:layout_below="@+id/ic_time"
+            android:text="Tuesday"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08.00-22.00"
+            android:textSize="15sp"
+            android:layout_above="@+id/time_wednesday"
+            android:layout_alignStart="@+id/textView11"
+            android:id="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/time_wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/time_tuesday"
+            android:layout_below="@+id/time_tuesday"
+            android:layout_marginTop="6dp"
+            android:text="Wednesday"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08.00-22.00"
+            android:textSize="15sp"
+            android:layout_alignBaseline="@+id/time_wednesday"
+            android:layout_alignBottom="@+id/time_wednesday"
+            android:layout_toEndOf="@+id/time_wednesday"
+            android:layout_marginStart="21dp"
+            android:id="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/time_thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/time_wednesday"
+            android:layout_below="@+id/time_wednesday"
+            android:layout_marginTop="6dp"
+            android:text="Thursday"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08.00-22.00"
+            android:textSize="15sp"
+            android:layout_alignBaseline="@+id/time_thursday"
+            android:layout_alignBottom="@+id/time_thursday"
+            android:layout_alignStart="@+id/textView11"
+            android:id="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/time_friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/time_thursday"
+            android:layout_below="@+id/time_thursday"
+            android:layout_marginTop="6dp"
+            android:text="Friday"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08.00-22.00"
+            android:textSize="15sp"
+            android:layout_above="@+id/time_saturday"
+            android:layout_alignStart="@+id/textView13"
+            android:id="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/time_saturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/time_friday"
+            android:layout_below="@+id/time_friday"
+            android:layout_marginTop="6dp"
+            android:text="Saturday"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08.00-22.00"
+            android:textSize="15sp"
+            android:layout_alignBaseline="@+id/time_saturday"
+            android:layout_alignBottom="@+id/time_saturday"
+            android:layout_alignStart="@+id/textView14"
+            android:id="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/time_sunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/time_saturday"
+            android:layout_below="@+id/time_saturday"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="10dp"
+            android:text="Sunday"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08.00-22.00"
+            android:textSize="15sp"
+            android:layout_alignBaseline="@+id/time_sunday"
+            android:layout_alignBottom="@+id/time_sunday"
+            android:layout_alignStart="@+id/textView15" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_contact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layout_schedule"
+        android:layout_marginTop="2dp"
+        android:background="@color/pureWhite">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_phone_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/imageView3"
+            android:text="0812 3456 7890"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+        </LinearLayout>
+
+        </ScrollView>
+
+</RelativeLayout>

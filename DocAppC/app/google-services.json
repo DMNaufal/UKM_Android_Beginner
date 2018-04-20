@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "311540451702",
+    "firebase_url": "https://docapp-2ee8e.firebaseio.com",
+    "project_id": "docapp-2ee8e",
+    "storage_bucket": "docapp-2ee8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311540451702:android:bf2b6989d66fea8c",
+        "android_client_info": {
+          "package_name": "com.example.bdrx.docapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311540451702-3fd3n69lr9sbbta2bb1cepifjguvjkmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCtdQkoqObr97kHTmjEUuArEgzLZADqWM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311540451702:android:6b26a3cdb2440e5c",
+        "android_client_info": {
+          "package_name": "com.example.bdrx.docappc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311540451702-3tdh9n88a77jm2cdbi6he2gudviuar4r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bdrx.docappc",
+            "certificate_hash": "886daa38710cdfad325ea5f5ae06418cacd9b0b1"
+          }
+        },
+        {
+          "client_id": "311540451702-3fd3n69lr9sbbta2bb1cepifjguvjkmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCtdQkoqObr97kHTmjEUuArEgzLZADqWM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311540451702-3fd3n69lr9sbbta2bb1cepifjguvjkmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
